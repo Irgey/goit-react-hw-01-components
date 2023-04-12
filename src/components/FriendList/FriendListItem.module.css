@@ -1,0 +1,29 @@
+.item {
+  display: flex;
+  gap: 3px;
+  padding: 15px;
+  align-items: center;
+  background-color: #e0d9d9;
+  border-radius: 10px;
+}
+.item:not(:last-child) {
+  margin-bottom: 5px;
+}
+.status {
+  font-size: 20px;
+}
+.avatar {
+  border-radius: 5px;
+}
+.statusOnline {
+  width: 20px;
+  height: 20px;
+  background-color: #c81616;
+  border-radius: 50%;
+}
+.statusOffline {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #0ed446;
+}
