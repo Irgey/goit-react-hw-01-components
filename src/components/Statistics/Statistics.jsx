@@ -1,15 +1,7 @@
 import PropTypes from 'prop-types';
 import css from './Statistics.module.css';
+import generateRandomHexColor from 'utils';
 const Statistics = ({ title, stats }) => {
-  function generateRandomHexColor() {
-    let hex = '#';
-    const characters = '0123456789ABCDEF';
-    for (let i = 0; i < 6; i++) {
-      hex += characters[Math.floor(Math.random() * 16)];
-    }
-    return hex;
-  }
-
   return (
     <section className={css.statistics}>
       {title && <h2 className={css.title}>{title}</h2>}
